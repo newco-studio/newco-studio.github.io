@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact — Newco Studio</title>
-<meta name="description" content="Joindre Newco Studio : info@newco-studio.com, Saguenay (Québec)." data-i18n="content" data-content-en="Contact Newco Studio: info@newco-studio.com, Saguenay, Quebec.">
+<meta name="description" content="Joindre Newco Studio : info@newco-studio.com. Bureaux à Québec et au Saguenay." data-i18n="content" data-content-en="Contact Newco Studio: info@newco-studio.com. Offices in Québec City and Saguenay.">
 <meta name="theme-color" content="#26364A">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Newco Studio">
 <meta property="og:title" content="Contact — Newco Studio">
-<meta property="og:description" content="Studio, notre plateforme de développement rapide de solutions d'IA, et nos produits : l'éditeur méthodologique et Estimé.">
+<meta property="og:description" content="Joindre Newco Studio : info@newco-studio.com. Bureaux à Québec et au Saguenay.">
 <meta property="og:image" content="images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -30,11 +30,10 @@
   <div class="wrap nav-in">
     <a class="brand" href="index.html"><img src="images/logo-wordmark.png" alt="Newco Studio" width="931" height="306"></a>
     <nav class="nav-links" id="navLinks" aria-label="Principale" data-i18n="aria-label" data-aria-label-en="Main">
-      <a href="index.html#studio">Studio</a>
-      <a href="index.html#products"><span class="fr">Produits</span><span class="en">Products</span></a>
-      <a href="index.html#use-cases"><span class="fr">Cas d'utilisation</span><span class="en">Use cases</span></a>
-      <a href="index.html#custom"><span class="fr">Sur mesure</span><span class="en">Tailored</span></a>
+      <a href="studio.html">Studio</a>
+      <a href="produits.html"><span class="fr">Produits</span><span class="en">Products</span></a>
       <a href="contact.html" aria-current="page">Contact</a>
+      <a class="ext" data-ext="ESTIME_URL" href="produits.html#estime"><span class="fr">Estimé </span><span class="en">Estimate </span></a>
     </nav>
     <div class="nav-right">
       <button class="lang" id="langBtn" type="button" lang="en" aria-label="English version">EN</button>
@@ -43,83 +42,38 @@
   </div>
 </header>
 
-<main id="main" class="page">
-<section>
-  <div class="wrap contact-grid">
-    <div>
-      <div class="eyebrow">Contact</div>
-      <h1><span class="fr">Parlons de votre projet.</span><span class="en">Let's talk about your project.</span></h1>
-      <p class="lead"><span class="fr">Une première discussion suffit pour cerner votre besoin et la prochaine étape concrète. Sans engagement.</span><span class="en">One conversation is enough to frame your need and the next concrete step. No commitment.</span></p>
-      <ul class="cinfo">
-        <li>
-          <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5.5" width="17" height="13" rx="2.2" stroke="#26364A" stroke-width="1.7"/><path d="M4.5 7l7.5 5.5L19.5 7" stroke="#F04E3E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div><h2><span class="fr">Courriel</span><span class="en">Email</span></h2><a href="mailto:info@newco-studio.com">info@newco-studio.com</a></div>
-        </li>
-        <li>
-          <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-4.5 7-8 7-11a7 7 0 1 0-14 0c0 3 2 6.5 7 11z" stroke="#26364A" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="#F04E3E"/></svg></div>
-          <div><h2><span class="fr">Où</span><span class="en">Where</span></h2><p><span class="fr">Saguenay (Québec) · rencontres sur place sur rendez-vous</span><span class="en">Saguenay, Quebec · on-site meetings by appointment</span></p></div>
-        </li>
-        <li>
-          <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#26364A" stroke-width="1.7"/><path d="M12 7v5l3.2 2" stroke="#F04E3E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div><h2><span class="fr">Réponse</span><span class="en">Response</span></h2><p><span class="fr">Habituellement sous un jour ouvrable</span><span class="en">Usually within one business day</span></p></div>
-        </li>
-      </ul>
-    </div>
+<main id="main">
 
-    <form class="form" id="contactForm" novalidate>
-      <div class="row2">
-        <div class="field">
-          <label for="cf-name"><span class="fr">Nom complet</span><span class="en">Full name</span></label>
-          <input type="text" id="cf-name" name="name" autocomplete="name" required>
-        </div>
-        <div class="field">
-          <label for="cf-org"><span class="fr">Organisation</span><span class="en">Organization</span></label>
-          <input type="text" id="cf-org" name="org" autocomplete="organization">
-        </div>
-      </div>
-      <div class="field">
-        <label for="cf-email"><span class="fr">Courriel</span><span class="en">Email</span></label>
-        <input type="email" id="cf-email" name="email" autocomplete="email" required>
-      </div>
-      <div class="field">
-        <label for="cf-topic"><span class="fr">Sujet</span><span class="en">Topic</span></label>
-        <select id="cf-topic" name="topic">
-          <option value="studio">Studio</option>
-          <option value="editor">Éditeur méthodologique / Methodology editor</option>
-          <option value="estime">Estimé / Estimate</option>
-          <option value="custom">Solution sur mesure / Tailored solution</option>
-          <option value="other">Autre / Other</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="cf-msg"><span class="fr">Votre message</span><span class="en">Your message</span></label>
-        <textarea id="cf-msg" name="message" required></textarea>
-      </div>
-      <p class="form-error" id="cf-error" role="alert"></p>
-      <div><button type="submit" class="btn btn-primary arrow"><span class="fr">Envoyer</span><span class="en">Send</span></button></div>
-      <p class="form-note"><span class="fr">L'envoi ouvre votre logiciel de courriel avec le message prêt. Rien n'est enregistré sur ce site.</span><span class="en">Sending opens your email app with the message ready. Nothing is stored on this site.</span></p>
-    </form>
+<section class="page-hero contact-hero">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h1><span class="fr">Parlons de votre projet.</span><span class="en">Let's talk about your project.</span></h1>
+    <p class="lead"><span class="fr">Bureaux à Québec et au Saguenay</span><span class="en">Offices in Québec City and Saguenay</span></p>
+    <div class="actions">
+      <a class="btn btn-primary btn-lg" href="mailto:info@newco-studio.com">info@newco-studio.com</a>
+    </div>
   </div>
 </section>
+
 </main>
 
 <footer class="footer">
   <div class="wrap footer-in">
     <div>
       <img src="images/logo-wordmark-white.png" alt="Newco Studio" width="931" height="306" loading="lazy">
-      <p><span class="fr">Solutions d'IA, développées rapidement. Saguenay (Québec).</span><span class="en">AI solutions, built fast. Saguenay, Quebec.</span></p>
+      <p><span class="fr">Solutions d'IA, développées rapidement.</span><span class="en">AI solutions, built fast.</span></p>
     </div>
     <nav aria-label="Pied de page" data-i18n="aria-label" data-aria-label-en="Footer">
-      <a href="index.html#studio">Studio</a>
-      <a href="index.html#products"><span class="fr">Produits</span><span class="en">Products</span></a>
-      <a data-ext="ESTIME_URL" href="contact.html?topic=estime"><span class="fr">Estimé</span><span class="en">Estimate</span></a>
+      <a href="studio.html">Studio</a>
+      <a href="produits.html"><span class="fr">Produits</span><span class="en">Products</span></a>
+      <a class="ext" data-ext="ESTIME_URL" href="produits.html#estime"><span class="fr">Estimé </span><span class="en">Estimate </span></a>
       <a href="contact.html">Contact</a>
       <a href="mailto:info@newco-studio.com">info@newco-studio.com</a>
     </nav>
   </div>
   <div class="wrap footer-bottom">
     <span><span class="fr">© 2026 Newco Studio. Tous droits réservés.</span><span class="en">© 2026 Newco Studio. All rights reserved.</span></span>
-    <span><span class="fr">Saguenay (Québec)</span><span class="en">Saguenay, Quebec</span></span>
+    <span><span class="fr">Bureaux à Québec et au Saguenay</span><span class="en">Offices in Québec City and Saguenay</span></span>
   </div>
 </footer>
 

@@ -9,17 +9,23 @@ the only link between them is one outbound link each way, set in [`config.js`](c
 
 ## Pages
 
+Each topic lives on one page only.
+
 | File | What |
 |---|---|
-| `index.html` | Home: Studio and its platform diagram, the two products (each with a 30-second video), the methodology editor tour, use cases, tailoring, contact call to action |
-| `contact.html` | Contact: e-mail, location, a form that opens the visitor's e-mail app (nothing is stored; `?topic=studio\|editor\|estime\|custom\|other` preselects the topic) |
+| `index.html` | Home, kept short: one line and one sentence, the three 30-second videos (Studio, Éditeur méthodologique, Estimé), three cards to the pages below, a one-line contact call to action |
+| `studio.html` | Studio's role (the platform we build our AI products on), the platform diagram (HTML and SVG), the feature tiles, and adapting Studio to your field (methodologies, compliance) |
+| `produits.html` | The two products: the Éditeur méthodologique (its modes and deliverable formats) and Estimé (with the link to the Estimé site), then the use cases |
+| `contact.html` | The e-mail address (info@newco-studio.com) and "Bureaux à Québec et au Saguenay"; no form, no street address, no phone |
 | `404.html` | Page not found (GitHub Pages serves it for unknown paths) |
+
+The navigation is Studio, Produits, Contact and an outbound Estimé link.
 
 ## Structure
 
 ```
 config.js          the one setting that names another site (ESTIME_URL)
-app.js             language switch, menu, outbound links, videos, tabs, lightbox, contact form
+app.js             language switch, menu, outbound links, videos, tabs, lightbox
 styles.css         brand tokens (navy, orange, Inter) and layout
 images/            logos, favicons, og-image.jpg, shots/ (screenshots), use-cases/ (illustrations)
 videos/            the 30-second videos (see below); empty in the repository for now
@@ -53,7 +59,7 @@ file under GitHub's 100 MB limit.
 
 - `images/shots/` — the Studio video poster (a brand frame), the methodology editor mockups (fictitious data) and one
   Estimé screenshot (project and firm names replaced). Each exists in `-fr` and `-en`. The Studio section's platform
-  diagram is HTML and SVG in `index.html`, not an image.
+  diagram is HTML and SVG in `studio.html`, not an image.
 - `images/use-cases/` — the isometric illustrations from the previous site.
 - `images/og-image.jpg` — the social preview (1200 × 630).
 

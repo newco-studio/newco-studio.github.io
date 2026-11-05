@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Newco Studio — Solutions d'IA développées rapidement</title>
-<meta name="description" content="Newco Studio développe rapidement des solutions d'IA fiables sur sa plateforme Studio. Produits : l'éditeur méthodologique et Estimé, l'analyse d'appels d'offres." data-i18n="content" data-content-en="Newco Studio builds reliable AI solutions fast on its Studio platform. Products: the methodology editor and Estimate, tender analysis.">
+<meta name="description" content="Newco Studio développe rapidement des solutions d'IA fiables sur sa plateforme Studio : l'éditeur méthodologique et Estimé." data-i18n="content" data-content-en="Newco Studio builds reliable AI solutions fast on its Studio platform: the methodology editor and Estimate.">
 <meta name="theme-color" content="#26364A">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Newco Studio">
 <meta property="og:title" content="Newco Studio — Solutions d'IA développées rapidement">
-<meta property="og:description" content="Studio, notre plateforme de développement rapide de solutions d'IA, et nos produits : l'éditeur méthodologique et Estimé.">
+<meta property="og:description" content="Newco Studio développe rapidement des solutions d'IA fiables sur sa plateforme Studio : l'éditeur méthodologique et Estimé.">
 <meta property="og:image" content="images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -30,11 +30,10 @@
   <div class="wrap nav-in">
     <a class="brand" href="index.html"><img src="images/logo-wordmark.png" alt="Newco Studio" width="931" height="306"></a>
     <nav class="nav-links" id="navLinks" aria-label="Principale" data-i18n="aria-label" data-aria-label-en="Main">
-      <a href="#studio">Studio</a>
-      <a href="#products"><span class="fr">Produits</span><span class="en">Products</span></a>
-      <a href="#use-cases"><span class="fr">Cas d'utilisation</span><span class="en">Use cases</span></a>
-      <a href="#custom"><span class="fr">Sur mesure</span><span class="en">Tailored</span></a>
+      <a href="studio.html">Studio</a>
+      <a href="produits.html"><span class="fr">Produits</span><span class="en">Products</span></a>
       <a href="contact.html">Contact</a>
+      <a class="ext" data-ext="ESTIME_URL" href="produits.html#estime"><span class="fr">Estimé </span><span class="en">Estimate </span></a>
     </nav>
     <div class="nav-right">
       <button class="lang" id="langBtn" type="button" lang="en" aria-label="English version">EN</button>
@@ -45,27 +44,17 @@
 
 <main id="main">
 
-<!-- HERO: Studio -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow"><span class="fr">Studio d'IA appliquée · Saguenay (Québec)</span><span class="en">Applied AI studio · Saguenay, Quebec</span></div>
-      <h1><span class="fr">Des solutions d'IA fiables, développées rapidement.</span><span class="en">Reliable AI solutions, built fast.</span></h1>
-      <p class="lead">
-        <span class="fr">Studio est notre plateforme de développement rapide de solutions d'IA. Vos méthodes deviennent des applications prêtes pour vos équipes : sécurisées, gouvernées et supervisées par vos experts.</span>
-        <span class="en">Studio is our platform for building AI solutions fast. Your methods become applications your teams can use: secure, governed and supervised by your experts.</span>
-      </p>
-      <div class="actions">
-        <a class="btn btn-primary arrow" href="contact.html"><span class="fr">Parlons de votre projet</span><span class="en">Let's talk about your project</span></a>
-        <a class="btn btn-ghost" href="#products"><span class="fr">Voir nos produits</span><span class="en">See our products</span></a>
-      </div>
-      <ul class="hero-points">
-        <li><span class="fr">Vos méthodes</span><span class="en">Your methods</span></li>
-        <li><span class="fr">Vos exigences de conformité</span><span class="en">Your compliance requirements</span></li>
-        <li><span class="fr">Vos experts aux commandes</span><span class="en">Your experts in control</span></li>
-      </ul>
-    </div>
-    <figure class="vid brand" data-video-fr="videos/studio-30s-fr.mp4" data-video-en="videos/studio-30s-en.mp4">
+<section class="home-hero">
+  <div class="wrap">
+    <h1><span class="fr">Des solutions d'IA fiables, développées rapidement.</span><span class="en">Reliable AI solutions, built fast.</span></h1>
+    <p class="lead"><span class="fr">Nous bâtissons des produits d'IA sur notre plateforme Studio, adaptés à vos méthodes et supervisés par vos experts.</span><span class="en">We build AI products on our Studio platform, adapted to your methods and supervised by your experts.</span></p>
+  </div>
+</section>
+
+<section class="home-videos" aria-label="Vidéos de 30 secondes" data-i18n="aria-label" data-aria-label-en="30-second videos">
+  <div class="wrap vgrid">
+      <figure class="vcard reveal">
+        <figure class="vid brand" data-video-fr="videos/studio-30s-fr.mp4" data-video-en="videos/studio-30s-en.mp4">
       <video preload="none" playsinline controls width="1600" height="1000"
         poster="images/shots/studio-poster-fr.webp" data-poster-en="images/shots/studio-poster-en.webp"
         aria-label="Vidéo : Studio en 30 secondes" data-aria-label-en="Video: Studio in 30 seconds" data-i18n="poster aria-label">
@@ -78,92 +67,9 @@
           <small class="when-soon"><span class="fr">Vidéo bientôt disponible</span><span class="en">Video coming soon</span></small></span>
       </button>
     </figure>
-  </div>
-</section>
-
-<!-- STUDIO -->
-<section id="studio">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="eyebrow"><span class="fr">La plateforme Studio</span><span class="en">The Studio platform</span></div>
-      <h2><span class="fr">La plateforme sur laquelle nous bâtissons nos produits.</span><span class="en">The platform we build our products on.</span></h2>
-      <p class="lead"><span class="fr">Ce que chaque produit d'IA doit avoir est déjà là. Un nouveau produit part d'un gabarit et se concentre sur votre métier : c'est ce qui nous rend rapides.</span><span class="en">What every AI product needs is already there. A new product starts from a template and focuses on your field: that is what makes us fast.</span></p>
-    </div>
-    <figure class="stack reveal" aria-labelledby="stack-cap">
-      <figcaption id="stack-cap" class="visually-hidden"><span class="fr">Schéma : les produits Estimé, l'éditeur méthodologique et votre produit reposent sur la plateforme Studio, qui fournit la connexion, les organisations et droits, les agents IA sécurisés, les coûts et budgets, les connaissances et le journal d'activité ; chaque nouveau produit part du gabarit d'application.</span><span class="en">Diagram: the products Estimate, the methodology editor and your product sit on the Studio platform, which provides sign-in, organisations and rights, secure AI agents, costs and budgets, knowledge and the activity log; every new product starts from the app template.</span></figcaption>
-      <ul class="stack-products" aria-hidden="true">
-        <li class="sp"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f766e"/><path fill="#fff" d="M12 12h10v29h30v10H12Z"/><path d="M31 27H50" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="31" cy="27" r="5.5" fill="#fff"/><circle cx="50" cy="27" r="5.5" fill="#fff"/></svg><span><b><span class="fr">Estimé</span><span class="en">Estimate</span></b><small><span class="fr">Analyse d'appels d'offres</span><span class="en">Tender analysis</span></small></span></li>
-        <li class="sp"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#F04E3E"/><g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M22 20v24M22 32h20M42 20v24"/></g><g fill="#fff"><circle cx="22" cy="18" r="6"/><circle cx="42" cy="18" r="6"/><circle cx="22" cy="46" r="6"/><circle cx="42" cy="46" r="6"/></g></svg><span><b><span class="fr">Éditeur méthodologique</span><span class="en">Methodology editor</span></b><small><span class="fr">Méthodologies exécutables</span><span class="en">Executable methodologies</span></small></span></li>
-        <li class="sp dashed"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#9aa8b3" stroke-width="3" stroke-dasharray="6 5"/><path d="M32 20v24M20 32h24" stroke="#26364A" stroke-width="4.5" stroke-linecap="round"/></svg><span><b><span class="fr">Votre produit</span><span class="en">Your product</span></b><small><span class="fr">À partir du gabarit</span><span class="en">From the template</span></small></span></li>
-      </ul>
-      <div class="stack-links" aria-hidden="true"><i></i><i></i><i></i></div>
-      <div class="stack-platform" aria-hidden="true">
-        <div class="pl-head"><img src="images/logo-wordmark-white.png" alt="" width="931" height="306" loading="lazy"><span><span class="fr">Plateforme commune</span><span class="en">Shared platform</span></span></div>
-        <ul class="pl-grid">
-          <li><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="9.5" rx="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 017 0v2.5"/></svg></span><span><span class="fr">Connexion</span><span class="en">Sign-in</span></span></li>
-          <li><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19c.9-3 3-4.5 5.5-4.5s4.6 1.5 5.5 4.5"/><circle cx="17" cy="9.5" r="2.3"/><path d="M15.5 14.6c2.2.2 3.8 1.6 4.5 4.4"/></svg></span><span><span class="fr">Organisations et droits</span><span class="en">Organisations and rights</span></span></li>
-          <li><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 2.6v5.3c0 4.6-3 7.9-7 9.2-4-1.3-7-4.6-7-9.2V5.6L12 3z"/><circle cx="9.7" cy="11" r=".9" fill="currentColor"/><circle cx="14.3" cy="11" r=".9" fill="currentColor"/><path d="M9.8 14.2c1.3.9 3.1.9 4.4 0"/></svg></span><span><span class="fr">Agents IA sécurisés</span><span class="en">AI agents, run safely</span></span></li>
-          <li><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19.5h16"/><path d="M7 16v-4M12 16V7M17 16v-6"/></svg></span><span><span class="fr">Coûts et budgets</span><span class="en">Costs and budgets</span></span></li>
-          <li><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 4.5h10a3 3 0 013 3v12H8a3 3 0 01-3-3v-12z"/><path d="M9 9h5M9 12.5h5" stroke-linecap="round"/></svg></span><span><span class="fr">Connaissances</span><span class="en">Knowledge</span></span></li>
-          <li><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6.5h10M9 12h10M9 17.5h10"/><circle cx="5" cy="6.5" r="1" fill="currentColor"/><circle cx="5" cy="12" r="1" fill="currentColor"/><circle cx="5" cy="17.5" r="1" fill="currentColor"/></svg></span><span><span class="fr">Journal d'activité</span><span class="en">Activity log</span></span></li>
-        </ul>
-      </div>
-      <div class="stack-template" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="4" y="4" width="11" height="11" rx="2"/><rect x="9" y="9" width="11" height="11" rx="2" stroke-dasharray="3 2.5"/></svg><span><b><span class="fr">Gabarit d'application</span><span class="en">App template</span></b> <span class="fr">— chaque nouveau produit part déjà branché sur la plateforme.</span><span class="en">— every new product starts already connected to the platform.</span></span></div>
-    </figure>
-    <ul class="features">
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.5" r="3.6" stroke="#26364A" stroke-width="1.8"/><path d="M5 19.5c1.2-3.4 3.8-5 7-5s5.8 1.6 7 5" stroke="#26364A" stroke-width="1.8" stroke-linecap="round"/><circle cx="18.5" cy="6" r="2" fill="#F04E3E"/></svg></div>
-        <h3><span class="fr">Identité et accès</span><span class="en">Identity and access</span></h3>
-        <p><span class="fr">Une connexion, la double authentification, les rôles et les droits.</span><span class="en">One sign-in, two-step verification, roles and rights.</span></p>
-      </li>
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="3" stroke="#26364A" stroke-width="1.8"/><circle cx="9.5" cy="11.5" r="1.4" fill="#F04E3E"/><circle cx="14.5" cy="11.5" r="1.4" fill="#F04E3E"/><path d="M12 2.5V5" stroke="#26364A" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-        <h3><span class="fr">Agents IA sécurisés</span><span class="en">Secure AI agents</span></h3>
-        <p><span class="fr">Exécutés en environnement isolé ; les clés des modèles restent protégées.</span><span class="en">Run in an isolated sandbox; model keys stay protected.</span></p>
-      </li>
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4-8 4-8-4 8-4z" fill="#F04E3E"/><path d="M4 12l8 4 8-4M4 16.5l8 4 8-4" stroke="#26364A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3><span class="fr">Agents versionnés</span><span class="en">Versioned agents</span></h3>
-        <p><span class="fr">Publier, comparer, revenir en arrière.</span><span class="en">Publish, compare, roll back.</span></p>
-      </li>
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4.5h10a3 3 0 013 3v12H8a3 3 0 01-3-3v-12z" stroke="#26364A" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 9h5M9 12.5h5" stroke="#F04E3E" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-        <h3><span class="fr">Base de connaissances</span><span class="en">Knowledge base</span></h3>
-        <p><span class="fr">Elle apprend des corrections, sous revue humaine.</span><span class="en">It learns from corrections, under human review.</span></p>
-      </li>
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4.5 6.5a2.5 2.5 0 012.5-2.5h10a2.5 2.5 0 012.5 2.5v7a2.5 2.5 0 01-2.5 2.5H11l-4 3.5V16a2.5 2.5 0 01-2.5-2.5v-7z" stroke="#26364A" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 7.2l.9 1.9 2 .3-1.5 1.4.4 2-1.8-1-1.8 1 .4-2-1.5-1.4 2-.3z" fill="#F04E3E"/></svg></div>
-        <h3><span class="fr">Un assistant sur chaque écran</span><span class="en">An assistant on every screen</span></h3>
-        <p><span class="fr">Par écrit ou de vive voix ; il peut piloter l'écran.</span><span class="en">In writing or by voice; it can drive the screen.</span></p>
-      </li>
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19.5h16" stroke="#26364A" stroke-width="1.8" stroke-linecap="round"/><rect x="5.5" y="11" width="3" height="6" rx="1" fill="#26364A"/><rect x="10.5" y="7" width="3" height="10" rx="1" fill="#F04E3E"/><rect x="15.5" y="9" width="3" height="8" rx="1" fill="#26364A"/></svg></div>
-        <h3><span class="fr">Coûts et budgets</span><span class="en">Costs and budgets</span></h3>
-        <p><span class="fr">Chaque appel d'IA chiffré, avec des budgets mensuels.</span><span class="en">Every AI call priced, with monthly budgets.</span></p>
-      </li>
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.3c0 4.6-3 7.9-7 9.2-4-1.3-7-4.6-7-9.2V5.6L12 3z" stroke="#26364A" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2.2 2.2L15.5 10" stroke="#F04E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3><span class="fr">Journalisation et sécurité</span><span class="en">Logging and security</span></h3>
-        <p><span class="fr">Qui a fait quoi, et des contrôles de sécurité IA.</span><span class="en">Who did what, plus AI security checks.</span></p>
-      </li>
-      <li class="feature reveal">
-        <div class="fi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="2" stroke="#26364A" stroke-width="1.8"/><rect x="13" y="4" width="7" height="7" rx="2" stroke="#26364A" stroke-width="1.8"/><rect x="4" y="13" width="7" height="7" rx="2" stroke="#26364A" stroke-width="1.8"/><path d="M16.5 13.5v6M13.5 16.5h6" stroke="#F04E3E" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3><span class="fr">Console, démo et gabarit</span><span class="en">Console, demo and template</span></h3>
-        <p><span class="fr">Tout gérer, faire des démos sur données fictives, démarrer un produit.</span><span class="en">Run it all, demo on fictitious data, start a new product.</span></p>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
-<section id="products" class="products">
-  <div class="wrap">
-    <div class="head center reveal">
-      <div class="eyebrow"><span class="fr">Nos produits</span><span class="en">Our products</span></div>
-      <h2><span class="fr">Deux produits, prêts à adapter.</span><span class="en">Two products, ready to adapt.</span></h2>
-    </div>
-    <div class="prod-grid">
-      <article class="prod reveal" id="editor">
+        <figcaption><span class="fr">Studio</span><span class="en">Studio</span></figcaption>
+      </figure>
+      <figure class="vcard reveal">
         <figure class="vid" data-video-fr="videos/editeur-30s-fr.mp4" data-video-en="videos/editeur-30s-en.mp4">
           <video preload="none" playsinline controls width="1440" height="900"
             poster="images/shots/editor-graph-fr.webp" data-poster-en="images/shots/editor-graph-en.webp"
@@ -177,23 +83,9 @@
               <small class="when-soon"><span class="fr">Vidéo bientôt disponible</span><span class="en">Video coming soon</span></small></span>
           </button>
         </figure>
-        <div class="prod-body">
-          <span class="tag"><span class="fr">Méthodologies exécutables</span><span class="en">Executable methodologies</span></span>
-          <h3><span class="fr">Éditeur méthodologique</span><span class="en">Methodology editor</span></h3>
-          <p><span class="fr">Le savoir-faire de votre organisation devient une méthodologie exécutable : chaque activité est confiée à un agent IA ou à un expert humain, avec l'approbation humaine aux points clés.</span><span class="en">Your organisation's know-how becomes an executable methodology: each activity goes to an AI agent or a human expert, with human approval at key points.</span></p>
-          <ul class="checks">
-            <li><span class="fr">Simple : décrivez le besoin, joignez vos fichiers, lancez</span><span class="en">Simple: describe the need, attach your files, start</span></li>
-            <li><span class="fr">Avancé : l'agent, vos supports et le livrable côte à côte</span><span class="en">Advanced: the agent, your supports and the deliverable side by side</span></li>
-            <li><span class="fr">Conception : rôles, supports et activités assemblés en graphe, avec un assistant</span><span class="en">Design: roles, supports and activities assembled as a graph, with an assistant</span></li>
-          </ul>
-          <div class="actions">
-            <a class="btn btn-primary" href="#editor-tour"><span class="fr">Voir l'éditeur</span><span class="en">See the editor</span></a>
-            <a class="btn btn-ghost arrow" href="contact.html?topic=editor"><span class="fr">Demander une démo</span><span class="en">Request a demo</span></a>
-          </div>
-        </div>
-      </article>
-
-      <article class="prod reveal" id="estime">
+        <figcaption><span class="fr">Éditeur méthodologique</span><span class="en">Methodology editor</span></figcaption>
+      </figure>
+      <figure class="vcard reveal">
         <figure class="vid" data-video-fr="videos/estime-30s-fr.mp4" data-video-en="videos/estime-30s-en.mp4">
           <video preload="none" playsinline controls width="1600" height="1000"
             poster="images/shots/estime-plan-measure-fr.webp" data-poster-en="images/shots/estime-plan-measure-en.webp"
@@ -207,168 +99,34 @@
               <small class="when-soon"><span class="fr">Vidéo bientôt disponible</span><span class="en">Video coming soon</span></small></span>
           </button>
         </figure>
-        <div class="prod-body">
-          <span class="tag ok"><span class="fr">Disponible · plomberie</span><span class="en">Available · plumbing</span></span>
-          <h3><span class="fr">Estimé</span><span class="en">Estimate</span></h3>
-          <p><span class="fr">L'analyse de vos appels d'offres — plans, devis et documentation technique — pour préparer vos soumissions en quelques heures plutôt qu'en plusieurs jours.</span><span class="en">Analysis of your tenders — drawings, specifications and technical documents — to prepare your bids in a few hours instead of several days.</span></p>
-          <ul class="checks">
-            <li><span class="fr">Relevé : chaque tuyau mesuré, chaque appareil compté</span><span class="en">Takeoff: every pipe measured, every fixture counted</span></li>
-            <li><span class="fr">Devis : tout est cité, avec un lien vers la référence</span><span class="en">Specification: everything cited, linked to the reference</span></li>
-            <li><span class="fr">Prix et soumission : un prix complet et des documents prêts à envoyer</span><span class="en">Pricing and bid: a complete price and documents ready to send</span></li>
-          </ul>
-          <div class="actions">
-            <a class="btn btn-primary ext" data-ext="ESTIME_URL" href="contact.html?topic=estime"><span class="fr">Découvrir Estimé</span><span class="en">Discover Estimate</span></a>
-          </div>
-        </div>
-      </article>
-    </div>
+        <figcaption><span class="fr">Estimé</span><span class="en">Estimate</span></figcaption>
+      </figure>
   </div>
 </section>
 
-<!-- METHODOLOGY EDITOR TOUR -->
-<section id="editor-tour">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="eyebrow"><span class="fr">Éditeur méthodologique</span><span class="en">Methodology editor</span></div>
-      <h2><span class="fr">Trois modes, une même méthodologie.</span><span class="en">Three modes, one methodology.</span></h2>
-      <p class="lead"><span class="fr">Chacun voit le mode auquel il a droit, méthodologie par méthodologie.</span><span class="en">Everyone sees the mode they are allowed, methodology by methodology.</span></p>
-    </div>
-    <div class="viewer reveal">
-      <div class="tabs" role="tablist" aria-label="Modes de l'éditeur" data-i18n="aria-label" data-aria-label-en="Editor modes">
-        <button role="tab" id="t-ed-simple" aria-controls="p-ed-simple" aria-selected="true"><span class="fr">Simple</span><span class="en">Simple</span></button>
-        <button role="tab" id="t-ed-advanced" aria-controls="p-ed-advanced" aria-selected="false" tabindex="-1"><span class="fr">Avancé</span><span class="en">Advanced</span></button>
-        <button role="tab" id="t-ed-design" aria-controls="p-ed-design" aria-selected="false" tabindex="-1"><span class="fr">Conception</span><span class="en">Design</span></button>
-        <button role="tab" id="t-ed-approval" aria-controls="p-ed-approval" aria-selected="false" tabindex="-1"><span class="fr">Approbation</span><span class="en">Approval</span></button>
-      </div>
-        <div class="panel" role="tabpanel" id="p-ed-simple" aria-labelledby="t-ed-simple">
-          <button class="zoom" type="button" aria-label="Agrandir la capture" data-aria-label-en="Enlarge the screenshot" data-i18n="aria-label"><img src="images/shots/editor-start-fr.webp" data-src-en="images/shots/editor-start-en.webp" data-i18n="src alt" loading="lazy" width="1440" height="900" alt="Mode simple : la demande, les fichiers joints et le bouton Lancer" data-alt-en="Simple mode: the request, the attached files and the Start button"></button>
-          <p><span class="fr">Décrivez le besoin, joignez vos fichiers et lancez : la méthodologie fait le reste.</span><span class="en">Describe the need, attach your files and start: the methodology does the rest.</span></p>
-        </div>
-        <div class="panel" role="tabpanel" id="p-ed-advanced" aria-labelledby="t-ed-advanced" hidden>
-          <button class="zoom" type="button" aria-label="Agrandir la capture" data-aria-label-en="Enlarge the screenshot" data-i18n="aria-label"><img src="images/shots/editor-run-fr.webp" data-src-en="images/shots/editor-run-en.webp" data-i18n="src alt" loading="lazy" width="1440" height="900" alt="Mode avancé : l'agent, les supports et le livrable en cours" data-alt-en="Advanced mode: the agent, the supports and the deliverable in progress"></button>
-          <p><span class="fr">La conversation avec l'agent, les supports et le livrable, côte à côte.</span><span class="en">The agent conversation, the supports and the deliverable, side by side.</span></p>
-        </div>
-        <div class="panel" role="tabpanel" id="p-ed-design" aria-labelledby="t-ed-design" hidden>
-          <button class="zoom" type="button" aria-label="Agrandir la capture" data-aria-label-en="Enlarge the screenshot" data-i18n="aria-label"><img src="images/shots/editor-graph-fr.webp" data-src-en="images/shots/editor-graph-en.webp" data-i18n="src alt" loading="lazy" width="1440" height="900" alt="Mode conception : l'assistant, la bibliothèque et le graphe des activités" data-alt-en="Design mode: the assistant, the library and the activity graph"></button>
-          <p><span class="fr">L'assistant de méthodologie, la bibliothèque de rôles et de supports, et le graphe des activités.</span><span class="en">The methodology assistant, the library of roles and supports, and the activity graph.</span></p>
-        </div>
-        <div class="panel" role="tabpanel" id="p-ed-approval" aria-labelledby="t-ed-approval" hidden>
-          <button class="zoom" type="button" aria-label="Agrandir la capture" data-aria-label-en="Enlarge the screenshot" data-i18n="aria-label"><img src="images/shots/editor-validation-fr.webp" data-src-en="images/shots/editor-validation-en.webp" data-i18n="src alt" loading="lazy" width="1440" height="900" alt="Approbation humaine : la décision de l'expert à côté du livrable" data-alt-en="Human approval: the expert's decision next to the deliverable"></button>
-          <p><span class="fr">L'expert valide ou demande une révision, le livrable sous les yeux.</span><span class="en">The expert approves or asks for a revision, with the deliverable in view.</span></p>
-        </div>
-    </div>
-    <h3 class="sub reveal"><span class="fr">Des livrables dans le bon format</span><span class="en">Deliverables in the right format</span></h3>
-    <ul class="thumbs reveal">
-      <li><button class="zoom" type="button" aria-label="Agrandir : Tableau de bord HTML" data-aria-label-en="Enlarge: HTML dashboard" data-i18n="aria-label"><img src="images/shots/editor-dashboard-fr-crop.webp" data-src-en="images/shots/editor-dashboard-en-crop.webp" data-full="images/shots/editor-dashboard-fr.webp" data-data-full-en="images/shots/editor-dashboard-en.webp" data-i18n="src alt data-full" loading="lazy" width="560" height="716" alt="Livrable : tableau de bord html" data-alt-en="Deliverable: html dashboard"></button><span><span class="fr">Tableau de bord HTML</span><span class="en">HTML dashboard</span></span></li>
-      <li><button class="zoom" type="button" aria-label="Agrandir : Diagramme technique (ISA-5.1)" data-aria-label-en="Enlarge: Technical diagram (ISA-5.1)" data-i18n="aria-label"><img src="images/shots/editor-diagram-fr-crop.webp" data-src-en="images/shots/editor-diagram-en-crop.webp" data-full="images/shots/editor-diagram-fr.webp" data-data-full-en="images/shots/editor-diagram-en.webp" data-i18n="src alt data-full" loading="lazy" width="560" height="716" alt="Livrable : diagramme technique (isa-5.1)" data-alt-en="Deliverable: technical diagram (isa-5.1)"></button><span><span class="fr">Diagramme technique (ISA-5.1)</span><span class="en">Technical diagram (ISA-5.1)</span></span></li>
-      <li><button class="zoom" type="button" aria-label="Agrandir : Objet 3D" data-aria-label-en="Enlarge: 3D object" data-i18n="aria-label"><img src="images/shots/editor-3d-fr-crop.webp" data-src-en="images/shots/editor-3d-en-crop.webp" data-full="images/shots/editor-3d-fr.webp" data-data-full-en="images/shots/editor-3d-en.webp" data-i18n="src alt data-full" loading="lazy" width="560" height="716" alt="Livrable : objet 3d" data-alt-en="Deliverable: 3d object"></button><span><span class="fr">Objet 3D</span><span class="en">3D object</span></span></li>
-    </ul>
-    <p class="note"><span class="fr">Maquettes sur des données de démonstration fictives.</span><span class="en">Mockups on fictitious demo data.</span></p>
+<section class="home-links">
+  <div class="wrap lgrid">
+    <a class="lcard reveal" href="studio.html">
+      <span class="lk">Studio</span>
+      <b><span class="fr">La plateforme sur laquelle nous bâtissons nos produits</span><span class="en">The platform we build our products on</span></b>
+      <span class="go arrow"><span class="fr">Découvrir Studio</span><span class="en">Discover Studio</span></span>
+    </a>
+    <a class="lcard reveal" href="produits.html">
+      <span class="lk"><span class="fr">Produits</span><span class="en">Products</span></span>
+      <b><span class="fr">L'éditeur méthodologique, Estimé et leurs cas d'utilisation</span><span class="en">The methodology editor, Estimate and their use cases</span></b>
+      <span class="go arrow"><span class="fr">Voir les produits</span><span class="en">See the products</span></span>
+    </a>
+    <a class="lcard reveal" href="contact.html">
+      <span class="lk">Contact</span>
+      <b><span class="fr">Bureaux à Québec et au Saguenay</span><span class="en">Offices in Québec City and Saguenay</span></b>
+      <span class="go arrow"><span class="fr">Nous joindre</span><span class="en">Contact us</span></span>
+    </a>
   </div>
 </section>
 
-<!-- USE CASES -->
-<section id="use-cases">
+<section class="home-cta">
   <div class="wrap">
-    <div class="head reveal">
-      <div class="eyebrow"><span class="fr">Cas d'utilisation</span><span class="en">Use cases</span></div>
-      <h2><span class="fr">On part de vos dossiers, pas de la technologie.</span><span class="en">We start from your files, not from technology.</span></h2>
-    </div>
-    <div class="cases">
-      <a class="case reveal" data-ext="ESTIME_URL" href="contact.html?topic=estime">
-        <img src="images/use-cases/offres.webp" alt="" width="480" height="480" loading="lazy">
-        <div>
-          <div class="sector"><span class="fr">Construction</span><span class="en">Construction</span></div>
-          <h3><span class="fr">Appels d'offres et soumissions</span><span class="en">Tenders and bids</span></h3>
-          <p><span class="fr">Du dossier d'appel d'offres à une soumission chiffrée et documentée.</span><span class="en">From the tender package to a priced, documented bid.</span></p>
-          <span class="more ext"><span class="fr">Estimé </span><span class="en">Estimate </span></span>
-        </div>
-      </a>
-      <div class="case reveal">
-        <img src="images/use-cases/connaissances.webp" alt="" width="480" height="480" loading="lazy">
-        <div>
-          <div class="sector"><span class="fr">Ingénierie et industrie</span><span class="en">Engineering and industry</span></div>
-          <h3><span class="fr">Documentation technique</span><span class="en">Technical documentation</span></h3>
-          <p><span class="fr">Plans, devis, modèles 3D et diagrammes transformés en analyses, études d'opportunité ou nomenclatures.</span><span class="en">Drawings, specifications, 3D models and diagrams turned into analyses, opportunity studies or bills of materials.</span></p>
-        </div>
-      </div>
-      <div class="case reveal">
-        <img src="images/use-cases/conformite.webp" alt="" width="480" height="480" loading="lazy">
-        <div>
-          <div class="sector"><span class="fr">Conformité</span><span class="en">Compliance</span></div>
-          <h3><span class="fr">Traçabilité et preuves</span><span class="en">Traceability and evidence</span></h3>
-          <p><span class="fr">Vos exigences structurées, les contrôles intégrés et la preuve à chaque étape.</span><span class="en">Your requirements structured, controls built in and evidence at every step.</span></p>
-        </div>
-      </div>
-      <div class="case reveal">
-        <img src="images/use-cases/methodes.webp" alt="" width="480" height="480" loading="lazy">
-        <div>
-          <div class="sector"><span class="fr">Processus</span><span class="en">Processes</span></div>
-          <h3><span class="fr">Méthodes d'experts</span><span class="en">Expert methods</span></h3>
-          <p><span class="fr">Les façons de faire de vos experts, activées au bon moment, selon le rôle et le dossier.</span><span class="en">Your experts' ways of working, activated at the right moment, by role and file.</span></p>
-        </div>
-      </div>
-      <div class="case reveal">
-        <img src="images/use-cases/collecte.webp" alt="" width="480" height="480" loading="lazy">
-        <div>
-          <div class="sector"><span class="fr">Terrain</span><span class="en">Field work</span></div>
-          <h3><span class="fr">Saisie et rapports terrain</span><span class="en">Field capture and reports</span></h3>
-          <p><span class="fr">Notes, photos, voix et documents réunis en un rapport à votre gabarit.</span><span class="en">Notes, photos, voice and documents assembled into a report on your template.</span></p>
-        </div>
-      </div>
-      <div class="case reveal">
-        <img src="images/use-cases/accueil.webp" alt="" width="480" height="480" loading="lazy">
-        <div>
-          <div class="sector"><span class="fr">Décision</span><span class="en">Decision</span></div>
-          <h3><span class="fr">Veille et synthèses</span><span class="en">Monitoring and briefs</span></h3>
-          <p><span class="fr">Les signaux de votre marché résumés en synthèses citées, prêtes à décider.</span><span class="en">Your market's signals summarised into cited briefs, ready for decisions.</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CUSTOM -->
-<section id="custom" class="dark">
-  <div class="wrap">
-    <div class="head center reveal">
-      <div class="eyebrow"><span class="fr">Sur mesure</span><span class="en">Tailored</span></div>
-      <h2><span class="fr">Studio, adapté à votre domaine.</span><span class="en">Studio, adapted to your field.</span></h2>
-      <p class="lead"><span class="fr">Nous personnalisons Studio en y intégrant vos méthodologies et vos exigences de conformité, pour adapter nos produits à votre domaine.</span><span class="en">We customise Studio with your methodologies and compliance requirements, to adapt our products to your field.</span></p>
-    </div>
-    <ol class="adapt">
-      <li class="reveal">
-        <div class="n">01</div>
-        <h3><span class="fr">Vos méthodologies</span><span class="en">Your methodologies</span></h3>
-        <p><span class="fr">Nous captons la façon de faire de vos experts, avec vos vrais dossiers, et la décrivons dans Studio.</span><span class="en">We capture how your experts work, with your real files, and describe it in Studio.</span></p>
-      </li>
-      <li class="reveal">
-        <div class="n">02</div>
-        <h3><span class="fr">Vos exigences de conformité</span><span class="en">Your compliance requirements</span></h3>
-        <p><span class="fr">Vos normes, vos politiques et la protection des renseignements personnels deviennent des contrôles intégrés.</span><span class="en">Your standards, policies and privacy rules become built-in controls.</span></p>
-      </li>
-      <li class="reveal">
-        <div class="n">03</div>
-        <h3><span class="fr">Votre domaine</span><span class="en">Your field</span></h3>
-        <p><span class="fr">Le produit parle votre langage, à vos couleurs, et vos experts gardent le dernier mot.</span><span class="en">The product speaks your language, in your colours, and your experts keep the final say.</span></p>
-      </li>
-    </ol>
-    <div class="actions reveal">
-      <a class="btn btn-primary arrow" href="contact.html?topic=custom"><span class="fr">Parlons de votre domaine</span><span class="en">Talk to us about your field</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="wrap">
-    <div class="cta-box reveal">
-      <div>
-        <h2><span class="fr">Quel dossier devrait passer à l'IA en premier ?</span><span class="en">Which work should move to AI first?</span></h2>
-        <p><span class="fr">Une première discussion suffit pour cerner votre besoin et la prochaine étape concrète.</span><span class="en">One conversation is enough to frame your need and the next concrete step.</span></p>
-      </div>
-      <a class="btn btn-primary arrow" href="contact.html"><span class="fr">Nous joindre</span><span class="en">Contact us</span></a>
-    </div>
+    <p class="reveal"><span class="fr">Un projet en tête ? Écrivez-nous à</span><span class="en">Have a project in mind? Write to us at</span> <a href="mailto:info@newco-studio.com">info@newco-studio.com</a></p>
   </div>
 </section>
 
@@ -378,26 +136,21 @@
   <div class="wrap footer-in">
     <div>
       <img src="images/logo-wordmark-white.png" alt="Newco Studio" width="931" height="306" loading="lazy">
-      <p><span class="fr">Solutions d'IA, développées rapidement. Saguenay (Québec).</span><span class="en">AI solutions, built fast. Saguenay, Quebec.</span></p>
+      <p><span class="fr">Solutions d'IA, développées rapidement.</span><span class="en">AI solutions, built fast.</span></p>
     </div>
     <nav aria-label="Pied de page" data-i18n="aria-label" data-aria-label-en="Footer">
-      <a href="#studio">Studio</a>
-      <a href="#products"><span class="fr">Produits</span><span class="en">Products</span></a>
-      <a data-ext="ESTIME_URL" href="contact.html?topic=estime"><span class="fr">Estimé</span><span class="en">Estimate</span></a>
+      <a href="studio.html">Studio</a>
+      <a href="produits.html"><span class="fr">Produits</span><span class="en">Products</span></a>
+      <a class="ext" data-ext="ESTIME_URL" href="produits.html#estime"><span class="fr">Estimé </span><span class="en">Estimate </span></a>
       <a href="contact.html">Contact</a>
       <a href="mailto:info@newco-studio.com">info@newco-studio.com</a>
     </nav>
   </div>
   <div class="wrap footer-bottom">
     <span><span class="fr">© 2026 Newco Studio. Tous droits réservés.</span><span class="en">© 2026 Newco Studio. All rights reserved.</span></span>
-    <span><span class="fr">Saguenay (Québec)</span><span class="en">Saguenay, Quebec</span></span>
+    <span><span class="fr">Bureaux à Québec et au Saguenay</span><span class="en">Offices in Québec City and Saguenay</span></span>
   </div>
 </footer>
-
-<dialog class="lightbox" id="lightbox" aria-label="Capture agrandie" data-i18n="aria-label" data-aria-label-en="Enlarged screenshot">
-  <img alt="">
-  <button class="lb-close" type="button" aria-label="Fermer" data-i18n="aria-label" data-aria-label-en="Close">×</button>
-</dialog>
 
 <script src="config.js"></script>
 <script src="app.js"></script>

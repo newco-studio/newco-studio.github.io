@@ -1,4 +1,4 @@
-/* Site script: language switch, menu, outbound links, videos, tabs, lightbox, contact form. No dependencies. */
+/* Site script: language switch, menu, outbound links, videos, tabs, lightbox. No dependencies. */
 (function () {
   'use strict';
   var doc = document.documentElement;
@@ -120,32 +120,6 @@
   if (langBtn) {
     langBtn.addEventListener('click', function () {
       applyLang(body.getAttribute('data-lang') === 'fr' ? 'en' : 'fr');
-    });
-  }
-
-  /* ---------- Contact form: opens the visitor's e-mail app ---------- */
-  var form = document.getElementById('contactForm');
-  if (form) {
-    var topic = /[?&]topic=([a-z-]+)/.exec(location.search);
-    var sel = document.getElementById('cf-topic');
-    if (topic && sel && sel.querySelector('option[value="' + topic[1] + '"]')) sel.value = topic[1];
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var lang = body.getAttribute('data-lang') || 'fr';
-      var err = document.getElementById('cf-error');
-      if (!form.checkValidity()) {
-        err.textContent = lang === 'fr' ? 'Indiquez votre nom, un courriel valide et votre message.' : 'Please enter your name, a valid email and your message.';
-        var bad = form.querySelector(':invalid'); if (bad) bad.focus();
-        return;
-      }
-      err.textContent = '';
-      var v = function (id) { return document.getElementById(id).value.trim(); };
-      var topicText = sel.options[sel.selectedIndex].text;
-      var subject = (lang === 'fr' ? 'Demande — ' : 'Inquiry — ') + topicText;
-      var lines = lang === 'fr'
-        ? ['Nom : ' + v('cf-name'), 'Organisation : ' + v('cf-org'), 'Courriel : ' + v('cf-email'), 'Sujet : ' + topicText, '', v('cf-msg')]
-        : ['Name: ' + v('cf-name'), 'Organization: ' + v('cf-org'), 'Email: ' + v('cf-email'), 'Topic: ' + topicText, '', v('cf-msg')];
-      location.href = 'mailto:info@newco-studio.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
     });
   }
 
