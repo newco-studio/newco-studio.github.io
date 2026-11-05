@@ -59,6 +59,30 @@
     });
   }
 
+  /* ---------- Video window: a clicked video plays large in a centred dialog; Esc, × or a click outside closes it ---------- */
+  var player = null;
+  if (window.HTMLDialogElement) {
+    var vdlg = document.createElement('dialog');
+    vdlg.className = 'vid-dialog';
+    vdlg.innerHTML = '<button class="vid-close" type="button" aria-label="Fermer">&times;</button><video controls playsinline></video>';
+    document.body.appendChild(vdlg);
+    var vbig = vdlg.querySelector('video');
+    var vclose = vdlg.querySelector('.vid-close');
+    player = {
+      open: function (src, label) {
+        vclose.setAttribute('aria-label', document.documentElement.lang === 'en' ? 'Close' : 'Fermer');
+        if (label) vbig.setAttribute('aria-label', label);
+        vbig.src = src;
+        vdlg.showModal();
+        var p = vbig.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+    };
+    vdlg.addEventListener('close', function () { vbig.pause(); vbig.removeAttribute('src'); vbig.load(); });
+    vclose.addEventListener('click', function () { vdlg.close(); });
+    vdlg.addEventListener('click', function (e) { if (e.target === vdlg) vdlg.close(); });
+  }
+
   /* ---------- Videos: poster + play button; a missing file shows "coming soon" instead of failing ---------- */
   var videos = [];
   function Video(fig) {
@@ -84,6 +108,8 @@
     };
     btn.addEventListener('click', function () {
       if (fig.classList.contains('soon')) return;
+      // Played larger right away in a centred window (not full screen); inline playback is the fallback.
+      if (player) { player.open(srcFor(lang), video.getAttribute('aria-label')); return; }
       video.src = srcFor(lang);
       video.controls = true;
       fig.classList.add('playing');
