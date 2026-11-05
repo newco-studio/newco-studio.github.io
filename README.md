@@ -11,7 +11,7 @@ the only link between them is one outbound link each way, set in [`config.js`](c
 
 | File | What |
 |---|---|
-| `index.html` | Home: Studio, the two products (each with a 30-second video), the methodology editor tour, use cases, tailoring, contact call to action |
+| `index.html` | Home: Studio and its platform diagram, the two products (each with a 30-second video), the methodology editor tour, use cases, tailoring, contact call to action |
 | `contact.html` | Contact: e-mail, location, a form that opens the visitor's e-mail app (nothing is stored; `?topic=studio\|editor\|estime\|custom\|other` preselects the topic) |
 | `404.html` | Page not found (GitHub Pages serves it for unknown paths) |
 
@@ -51,8 +51,9 @@ file under GitHub's 100 MB limit.
 
 ## Images
 
-- `images/shots/` — Studio screenshots on fictitious demo data, the methodology editor mockups (fictitious data) and
-  one Estimé screenshot (project and firm names replaced). Each exists in `-fr` and `-en`.
+- `images/shots/` — the Studio video poster (a brand frame), the methodology editor mockups (fictitious data) and one
+  Estimé screenshot (project and firm names replaced). Each exists in `-fr` and `-en`. The Studio section's platform
+  diagram is HTML and SVG in `index.html`, not an image.
 - `images/use-cases/` — the isometric illustrations from the previous site.
 - `images/og-image.jpg` — the social preview (1200 × 630).
 
